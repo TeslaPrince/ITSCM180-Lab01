@@ -1,0 +1,40 @@
+//Jenna Lambert
+//Lab 01
+//2-15-19
+package lab01_lambert;
+import java.util.Scanner;
+public class Lab01_Lambert {
+    public static void main(String[] args) {
+       //declare variables
+       int uin;
+       
+       //Step one
+       System.out.println("Please select a meme from the following, and I'll complete it!");
+       System.out.println("0. Your Computer: Hello...");
+       System.out.println("1. The Most Interesting Man in the World: I don't always eat dinner...");
+       System.out.println("2. Ryan Gosling: Hey girl...");
+       System.out.println("3. Ned Stark: Brace yourselves...");
+       System.out.println("4. You: Can this assignment get any longer?");
+       System.out.println("");
+       
+       //Step Two
+       Scanner sc = new Scanner(System.in);
+       uin = sc.nextInt();
+       
+       //Step Three
+       System.out.println("You selected number " + uin);
+       if (uin == 0)
+       {System.out.println("Your Computer: Hello World!");}
+       else if (uin == 1)
+       {System.out.println("The Most Interesting Man in the World: I don't always eat dinner, but when I do, I eat pizza.");}
+       else if (uin == 2)
+       {System.out.println("Ryan Gosling: Hey girl! Want to meet up for yoga and lattes?");}
+       else if (uin == 3)
+       {System.out.println("Ned Stark: Brace yourselves! Winter is coming!");}
+       else if (uin == 4)
+       {System.out.println("You: Can this assignment get any longer?");
+        System.out.println("Dr. Platt: Hold my beer!");}
+       else
+       {System.out.println("Worst. Choice. Ever.");}
+    }
+}
